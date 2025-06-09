@@ -1,0 +1,32 @@
+# Jekyll configuration for Merul Badda Talks
+
+title: "Merul Badda Talks in Maths and Physics"
+email: ""
+description: >- # this means to ignore newlines until ""
+  Seminar series organized by the School of Data and Sciences at BRAC University.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+timezone: Asia/Dhaka
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:path/
+
+sass:
+  style: compressed
+
+include:
+  - _merulbadda
+
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+
+permalink: pretty
+
+

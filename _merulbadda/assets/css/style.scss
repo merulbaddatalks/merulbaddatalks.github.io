@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
+
+// Basic technical looking dark theme
+$primary: #0B3D91;
+$accent: #F0A500;
+$bg: #111;
+$text: #eee;
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background: $bg;
+  color: $text;
+}
+
+header {
+  background: $primary;
+  padding: 0.5rem 1rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-title {
+  margin-right: auto;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+footer {
+  background: $primary;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+a {
+  color: $accent;
+}
+
+a:hover {
+  color: lighten($accent, 10%);
+}
+
+.talk .images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.talk .speaker-photo,
+.talk .poster-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}

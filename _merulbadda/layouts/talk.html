@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="talk">
+  <h1>{{ page.title }}</h1>
+  <p class="speaker">{{ page.speaker }}, {{ page.affiliation }}</p>
+  <p class="date">📅 {{ page.date | date: '%B %d, %Y' }}</p>
+  <div class="images">
+    {% if page.speaker_photo %}
+    <img src="{{ page.speaker_photo | relative_url }}" alt="{{ page.speaker }}" class="speaker-photo"/>
+    {% endif %}
+    {% if page.poster_image %}
+    <img src="{{ page.poster_image | relative_url }}" alt="Poster for {{ page.title }}" class="poster-image"/>
+    {% endif %}
+  </div>
+  <section class="abstract">
+    <h2>Abstract</h2>
+    {{ page.abstract }}
+  </section>
+  {% if page.youtube_url %}
+  <div class="video">
+    <iframe width="560" height="315" src="{{ page.youtube_url | replace: 'watch?v=', 'embed/' }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+  {% endif %}
+</article>
