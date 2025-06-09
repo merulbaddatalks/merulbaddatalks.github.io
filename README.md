@@ -11,7 +11,7 @@ _merulbadda/         Jekyll layouts, includes, and assets
   includes/
   assets/
 _posts/              Optional blog posts
-/talks/              Markdown files for each talk
+_talks/              Markdown files for each talk
 about.md
 upcoming.md
 index.html
@@ -22,7 +22,7 @@ _config.yml
 
 ## Adding a New Talk
 
-1. Create a markdown file in the `talks/` directory named `YYYY-MM-DD-slug.md`.
+1. Create a markdown file in the `_talks/` directory named `YYYY-MM-DD-slug.md`.
 2. Use the following front matter template:
 
 ```yaml
@@ -34,12 +34,13 @@ affiliation: "Affiliation"
 abstract: >
   Full abstract text
 speaker_photo: "/assets/images/speakers/NAME.jpg"
-poster_image: "/assets/images/posters/POSTER.jpg"
 youtube_url: "https://www.youtube.com/watch?v=VIDEOID"
+slides_url: "https://drive.google.com/file/d/ID/view"
 ---
 ```
 
-3. Commit the file and images to the repository.
+3. Provide a Google Drive link in `slides_url` for any slides.
+4. Commit the file and images to the repository.
 
 ## Building Locally
 
