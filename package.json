@@ -1,0 +1,11 @@
+{
+  "name": "merulbaddatalks",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "jekyll build --destination _site",
+    "serve": "jekyll serve",
+    "deploy": "gh-pages -d _site"
+  },
+  "devDependencies": {
+  }
+}
