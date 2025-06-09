@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  margin-right: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.talk .images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.talk .speaker-photo,
+.talk .poster-image {
+  max-width: 100%;
+  height: auto;
+}
