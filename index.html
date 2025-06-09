@@ -9,7 +9,7 @@ title: "Home"
   <h2>Upcoming Talk</h2>
   {% if next %}
     <p class="next-talk"><strong>{{ next.date | date: '%B %d, %Y' }}:</strong>
-    <a href="{{ next.url }}">{{ next.title }}</a><br>
+    <a href="{{ talk.url }}">{{ next.title }}</a><br>
     {{ next.speaker }}, {{ next.affiliation }}</p>
     <div id="upcoming-calendar" data-date="{{ next.date }}"></div>
   {% else %}
