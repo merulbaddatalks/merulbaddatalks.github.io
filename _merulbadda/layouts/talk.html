@@ -22,4 +22,7 @@ layout: default
     <iframe width="560" height="315" src="{{ page.youtube_url | replace: 'watch?v=', 'embed/' }}" frameborder="0" allowfullscreen></iframe>
   </div>
   {% endif %}
+  {% if page.slides_url %}
+  <p class="slides"><a href="{{ page.slides_url }}">Download Slides</a></p>
+  {% endif %}
 </article>
