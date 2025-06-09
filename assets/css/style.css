@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
 :root {
-  --primary: #0B3D91;
-  --accent: #F0A500;
-  --bg: #111;
-  --text: #eee;
-  --accent-light: #FFBA24;
-  --primary-dark: #093379;
+  --primary: #8EABC1;
+  --accent: #A2ADD0;
+  --bg: #363050;
+  --text: #B9C0C6;
+  --accent-light: #B5BEE2;
+  --primary-dark: #788fa6;
 }
 body {
   font-family: 'Roboto Mono', monospace;
