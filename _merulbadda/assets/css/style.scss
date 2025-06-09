@@ -16,16 +16,22 @@ body {
 
 header {
   background: $primary;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 header nav {
+  margin-top: 0.5rem;
   display: flex;
   gap: 1rem;
-}
-
-.site-title {
-  margin-right: auto;
+  justify-content: center;
 }
 
 header nav a {
@@ -75,4 +81,39 @@ a:hover {
   width: 100%;
   max-width: 560px;
   height: 315px;
+}
+
+.talk-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.talk-table th,
+.talk-table td {
+  border: 1px solid #444;
+  padding: 0.5rem;
+}
+
+.talk-table th {
+  background: darken($primary, 5%);
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #444;
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.calendar-table .event-day {
+  background: $accent;
+  color: #000;
+  font-weight: bold;
 }
