@@ -14,7 +14,12 @@ collections:
     output: true
     permalink: /talks/:path/
 
+layouts_dir: _merulbadda/layouts
+includes_dir: _merulbadda/includes
+
 sass:
+  sass_dir: _merulbadda/assets/css
+  css_dir: assets/css
   style: compressed
 
 include:
