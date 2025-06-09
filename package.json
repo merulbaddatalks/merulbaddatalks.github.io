@@ -2,8 +2,8 @@
   "name": "merulbaddatalks",
   "version": "1.0.0",
   "scripts": {
-    "build": "jekyll build --destination _site",
-    "serve": "jekyll serve",
+    "build": "bundle exec jekyll build --destination _site",
+    "serve": "bundle exec jekyll serve",
     "deploy": "gh-pages -d _site"
   },
   "devDependencies": {

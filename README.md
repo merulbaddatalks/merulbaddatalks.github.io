@@ -1,6 +1,7 @@
 # Merul Badda Talks in Maths and Physics
 
 This repository contains the source for the Merul Badda Talks website. The site is built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
+The design uses a minimal dark theme written in SCSS for a clean, technical look.
 
 ## Structure
 
@@ -45,9 +46,9 @@ youtube_url: "https://www.youtube.com/watch?v=VIDEOID"
 Install Ruby and Jekyll, then run:
 
 ```bash
-bundle install # if you use Bundler
-jekyll build --destination _site
-jekyll serve
+bundle install
+bundle exec jekyll build --destination _site
+bundle exec jekyll serve
 ```
 
 ## Deployment
