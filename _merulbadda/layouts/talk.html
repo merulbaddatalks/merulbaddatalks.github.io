@@ -3,9 +3,6 @@ layout: default
 ---
 <article class="talk">
   <div class="talk-header">
-    {% if page.speaker_photo %}
-    <img src="{{ page.speaker_photo | relative_url }}" alt="{{ page.speaker }}" class="speaker-photo" />
-    {% endif %}
     <div class="talk-meta">
       <h1>{{ page.title | markdownify }}</h1>
 
@@ -19,6 +16,9 @@ layout: default
         {% endif %}
       </p>
     </div>
+    {% if page.speaker_photo %}
+    <img src="{{ page.speaker_photo | relative_url }}" alt="{{ page.speaker }}" class="speaker-photo" />
+    {% endif %}
   </div>
   <section class="abstract">
     <h2>Abstract</h2>
