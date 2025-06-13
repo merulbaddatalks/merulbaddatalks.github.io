@@ -2,13 +2,21 @@
 layout: default
 ---
 <article class="talk">
-  <h1>{{ page.title | markdownify }}</h1>
-  <p class="speaker">{{ page.speaker }}, {{ page.affiliation }}</p>
-  <p class="date">📅 {{ page.date | date: '%B %d, %Y' }}</p>
-  <div class="images">
+  <div class="talk-header">
     {% if page.speaker_photo %}
-    <img src="{{ page.speaker_photo | relative_url }}" alt="{{ page.speaker }}" class="speaker-photo"/>
+    <img src="{{ page.speaker_photo | relative_url }}" alt="{{ page.speaker }}" class="speaker-photo" />
     {% endif %}
+    <div class="talk-meta">
+      <h1>{{ page.title | markdownify }}</h1>
+      <p class="speaker">{{ page.speaker }}</p>
+      <p class="affiliation">{{ page.affiliation }}</p>
+      <p class="date">📅 {{ page.date | date: '%B %d, %Y' }}
+        {% if page.date >= site.time %}
+          {% if page.room %} | Room: {{ page.room }}{% endif %}
+          {% if page.rsvp %} | <a href="{{ page.rsvp }}">RSVP</a>{% endif %}
+        {% endif %}
+      </p>
+    </div>
   </div>
   <section class="abstract">
     <h2>Abstract</h2>
