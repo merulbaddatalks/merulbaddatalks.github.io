@@ -117,6 +117,14 @@ a:hover {
   margin-bottom: 0.25rem;
 }
 
+.talk-header .affiliation {
+  margin-bottom: 0.5rem;
+}
+
+.talk-header .date {
+  margin-top: 0.5rem;
+}
+
 
 .talk .speaker-photo {
   width: 150px;
@@ -170,7 +178,8 @@ a:hover {
 }
 
 .upcoming-talk {
-  background: $highlight;
+  background: $text;
+  color: $highlight;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -179,6 +188,14 @@ a:hover {
   text-align: center;
   border: 2px solid $primary;
 
+}
+
+.upcoming-talk a {
+  color: $highlight;
+}
+
+.upcoming-talk a:hover {
+  text-decoration: underline;
 }
 
 .upcoming-talk h2 {

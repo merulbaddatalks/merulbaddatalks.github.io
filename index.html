@@ -10,9 +10,9 @@ title: "Home"
   {% if next %}
     <p class="next-talk"><strong>{{ next.date | date: '%B %d, %Y' }}:</strong>
 
-    {{ next.title }} (<a href="{{ next.url | relative_url }}">view abstract</a>)<br>
+    {{ next.title }}<br>
 
-    {{ next.speaker }}, {{ next.affiliation }}</p>
+    {{ next.speaker }}, {{ next.affiliation }} (<a href="{{ next.url | relative_url }}">view abstract</a>)</p>
     {% if next.room %}<p>Room: {{ next.room }} | <a href="{{ next.rsvp }}">RSVP</a></p>{% endif %}
     <div id="upcoming-calendar" data-date="{{ next.date }}"></div>
   {% else %}
