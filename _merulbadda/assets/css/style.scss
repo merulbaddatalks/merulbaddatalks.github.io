@@ -238,4 +238,27 @@ a:hover {
     overflow-x: auto;
     white-space: nowrap;
   }
+
+  .talk-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .talk-header p {
+    font-size: 0.9rem;
+  }
+
+  .talk-table th,
+  .talk-table td {
+    font-size: 0.85rem;
+    padding: 0.25rem;
+  }
+
+  .upcoming-talk {
+    max-width: 100%;
+    padding: 0.75rem;
+  }
+
+  .upcoming-talk .next-talk {
+    font-size: 1rem;
+  }
 }
