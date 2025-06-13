@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
 
 // Basic technical looking dark theme
-$primary: #8EABC1; // Nepal
-$accent: #A2ADD0; // Wild Blue Yonder
-$bg: #363050; // Martinique
-$text: #B9C0C6; // Loblolly
+$primary: #004B87; // Dark blue
+$accent: #A8DADC; // Accent
+$bg: #F1FAEE; // Light background
+$text: #004B87; // Text color
+$highlight: #F0B7A4;
 
 body {
   font-family: 'Roboto Mono', monospace;
@@ -12,6 +13,9 @@ body {
   padding: 0;
   background: $bg;
   color: $text;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -20,11 +24,10 @@ header {
   text-align: center;
 }
 
-header .logo a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
+header .logo img {
+  display: block;
+  margin: 0 auto;
+  height: 60px;
 }
 
 header nav {
@@ -48,6 +51,7 @@ main {
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem;
+  flex: 1;
 }
 
 footer {
@@ -62,7 +66,7 @@ a {
 }
 
 a:hover {
-  color: lighten($accent, 10%);
+  color: $highlight;
 }
 
 .talk .images {
@@ -71,9 +75,16 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.talk-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .talk .speaker-photo {
-  max-width: 100%;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .video iframe {
