@@ -7,7 +7,10 @@ title: "Upcoming Talks"
 <ul>
   {% assign upcoming = site.talks | where_exp: 'talk', 'talk.date > site.time' | sort: 'date' %}
   {% for talk in upcoming %}
-  <li>{{ talk.date | date: '%B %d, %Y' }} - <a href="{{ talk.url }}">{{ talk.title }}</a>
+
+  <li>{{ talk.date | date: '%B %d, %Y' }} - {{ talk.title }}
+  (<a href="{{ talk.url }}">view abstract</a>)
+
   {% if talk.room %}(Room: {{ talk.room }}){% endif %}
   {% if talk.rsvp %}<a href="{{ talk.rsvp }}">RSVP</a>{% endif %}</li>
   {% endfor %}

@@ -2,10 +2,11 @@
 
 // Basic technical looking dark theme
 $primary: #004B87; // Dark blue
-$accent: #A8DADC; // Accent
-$bg: #F1FAEE; // Light background
-$text: #004B87; // Text color
-$highlight: #F0B7A4;
+$accent: #F0B7A4; // link color
+$bg: #A8DADC; // body background
+$text: #457B9D; // Text color on light background
+$highlight: #F1FAEE;
+
 
 body {
   font-family: 'Roboto Mono', monospace;
@@ -62,11 +63,11 @@ footer {
 }
 
 a {
-  color: $accent;
+  color: $primary;
 }
 
 a:hover {
-  color: $highlight;
+  color: darken($primary, 10%);
 }
 
 .talk .images {
@@ -75,8 +76,12 @@ a:hover {
   flex-wrap: wrap;
 }
 
+
+
 .talk-header {
   display: flex;
+  flex-direction: row-reverse;
+
   align-items: center;
   gap: 1rem;
 }
@@ -85,6 +90,8 @@ a:hover {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  border: 3px solid $primary;
+
 }
 
 .video iframe {
