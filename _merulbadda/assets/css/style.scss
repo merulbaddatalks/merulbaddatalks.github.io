@@ -7,6 +7,7 @@ $bg: #A8DADC; // body background
 $text: #457B9D; // Text color on light background
 $highlight: #F1FAEE;
 
+
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
@@ -27,7 +28,8 @@ header {
 header .logo img {
   display: block;
   margin: 0 auto;
-  height: 80px;
+  height: 150px;
+
 }
 
 header nav {
@@ -80,12 +82,15 @@ a:hover {
 }
 
 
+
 .talk-header {
   display: flex;
   flex-direction: row;
+
   align-items: center;
   gap: 1rem;
 }
+
 
 .talk-header .talk-meta {
   text-align: left;
@@ -96,11 +101,13 @@ a:hover {
   margin: 0;
 }
 
+
 .talk .speaker-photo {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border: 3px solid $primary;
+
 }
 
 .video iframe {

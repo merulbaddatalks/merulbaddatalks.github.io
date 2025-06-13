@@ -8,8 +8,10 @@ layout: default
     {% endif %}
     <div class="talk-meta">
       <h1>{{ page.title | markdownify }}</h1>
+
       <p class="speaker">{{ page.speaker }}</p>
       <p class="affiliation">{{ page.affiliation }}</p>
+
       <p class="date">📅 {{ page.date | date: '%B %d, %Y' }}
         {% if page.date >= site.time %}
           {% if page.room %} | Room: {{ page.room }}{% endif %}
