@@ -9,8 +9,9 @@ title: "Home"
   <h2>Upcoming Talk</h2>
   {% if next %}
     <p class="next-talk"><strong>{{ next.date | date: '%B %d, %Y' }}:</strong>
-    <a href="{{ talk.url }}">{{ next.title }}</a><br>
+    {{ next.title }} (<a href="{{ next.url | relative_url }}">view abstract</a>)<br>
     {{ next.speaker }}, {{ next.affiliation }}</p>
+    {% if next.room %}<p>Room: {{ next.room }} | <a href="{{ next.rsvp }}">RSVP</a></p>{% endif %}
     <div id="upcoming-calendar" data-date="{{ next.date }}"></div>
   {% else %}
     <p>No upcoming talks scheduled.</p>
@@ -25,10 +26,10 @@ title: "Home"
     </thead>
     <tbody>
       {% assign past = site.talks | where_exp: 't','t.date < site.time' | sort:'date' | reverse %}
-      {% for talk in past %}
+      {% for talk in past limit:5 %}
       <tr>
         <td>{{ talk.date | date: '%Y-%m-%d' }}</td>
-        <td><a href="{{ talk.url }}">{{ talk.title }}</a></td>
+        <td><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></td>
         <td>{{ talk.speaker }}</td>
         <td>{{ talk.affiliation }}</td>
         <td>{% if talk.youtube_url %}<a href="{{ talk.youtube_url }}">Video</a>{% else %}N/A{% endif %}</td>
@@ -37,4 +38,5 @@ title: "Home"
       {% endfor %}
     </tbody>
   </table>
+  <p><a href="{{ '/previous-talks/' | relative_url }}">More previous talks</a></p>
 </section>
