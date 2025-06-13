@@ -50,6 +50,7 @@ footer a:active {
 
 header nav a:hover {
   text-decoration: underline;
+  color: $text;
 }
 
 main {
@@ -68,6 +69,10 @@ footer {
 
 footer a {
   color: #fff;
+}
+
+footer a:hover {
+  color: $text;
 }
 
 a {
@@ -162,4 +167,57 @@ a:hover {
   background: $accent;
   color: #000;
   font-weight: bold;
+}
+
+.upcoming-talk {
+  background: $highlight;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 1rem auto 2rem;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid $primary;
+}
+
+.upcoming-talk h2 {
+  margin-top: 0;
+}
+
+.upcoming-talk .next-talk {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  header .logo img {
+    height: 100px;
+  }
+  header nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  header nav a {
+    padding: 0.5rem 0;
+  }
+  .talk-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .talk .speaker-photo {
+    width: 100%;
+    max-width: 200px;
+  }
+  .talk-table,
+  .calendar-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
