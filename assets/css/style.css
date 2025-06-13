@@ -139,8 +139,12 @@ a:hover {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+
+  margin: 1rem auto 2rem;
+  max-width: 600px;
   text-align: center;
+  border: 2px solid var(--primary);
+
 }
 .upcoming-talk h2 {
   margin-top: 0;
