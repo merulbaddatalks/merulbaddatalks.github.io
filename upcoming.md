@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Upcoming Talks"
+permalink: /upcoming/
 ---
 
 <h2>Upcoming Talks</h2>

@@ -68,7 +68,8 @@ a:hover {
 }
 .talk-header {
   display: flex;
-  flex-direction: row-reverse;
+
+  flex-direction: row;
 
   align-items: center;
   gap: 1rem;
@@ -97,7 +98,8 @@ a:hover {
   padding: 0.5rem;
 }
 .talk-table th {
-  background: var(--primary-dark);
+  background: var(--primary);
+  color: #fff;
 }
 .calendar-table {
   width: 100%;

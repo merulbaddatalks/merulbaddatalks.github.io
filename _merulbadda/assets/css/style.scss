@@ -76,11 +76,9 @@ a:hover {
   flex-wrap: wrap;
 }
 
-
-
 .talk-header {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 
   align-items: center;
   gap: 1rem;
@@ -113,7 +111,8 @@ a:hover {
 }
 
 .talk-table th {
-  background: darken($primary, 5%);
+  background: $primary;
+  color: #fff;
 }
 
 .calendar-table {
