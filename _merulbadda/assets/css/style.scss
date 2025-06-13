@@ -7,6 +7,7 @@ $bg: #A8DADC; // body background
 $text: #457B9D; // Text color on light background
 $highlight: #F1FAEE;
 
+
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
@@ -75,10 +76,10 @@ a:hover {
   flex-wrap: wrap;
 }
 
-
 .talk-header {
   display: flex;
   flex-direction: row;
+
   align-items: center;
   gap: 1rem;
 }
@@ -88,6 +89,7 @@ a:hover {
   height: 150px;
   object-fit: cover;
   border: 3px solid $primary;
+
 }
 
 .video iframe {

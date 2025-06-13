@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap');
 :root {
   --primary: #004B87;
+
   --accent: #F0B7A4;
   --bg: #A8DADC;
   --text: #457B9D;
   --accent-light: #F1FAEE;
+
   --primary-dark: #003961;
 }
 body {
@@ -66,7 +68,9 @@ a:hover {
 }
 .talk-header {
   display: flex;
+
   flex-direction: row;
+
   align-items: center;
   gap: 1rem;
 }
@@ -74,7 +78,9 @@ a:hover {
   width: 150px;
   height: 150px;
   object-fit: cover;
+
   border: 3px solid var(--primary);
+
 }
 .video iframe {
   width: 100%;
