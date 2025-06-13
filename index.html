@@ -10,7 +10,7 @@ title: "Home"
   {% if next %}
     <p class="next-talk"><strong>{{ next.date | date: '%B %d, %Y' }}:</strong>
 
-    {{ next.title }} (<a href="{{ next.url }}">view abstract</a>)<br>
+    {{ next.title }} (<a href="{{ next.url | relative_url }}">view abstract</a>)<br>
 
     {{ next.speaker }}, {{ next.affiliation }}</p>
     {% if next.room %}<p>Room: {{ next.room }} | <a href="{{ next.rsvp }}">RSVP</a></p>{% endif %}
@@ -31,7 +31,7 @@ title: "Home"
       {% for talk in past limit:5 %}
       <tr>
         <td>{{ talk.date | date: '%Y-%m-%d' }}</td>
-        <td><a href="{{ talk.url }}">{{ talk.title }}</a></td>
+        <td><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></td>
         <td>{{ talk.speaker }}</td>
         <td>{{ talk.affiliation }}</td>
         <td>{% if talk.youtube_url %}<a href="{{ talk.youtube_url }}">Video</a>{% else %}N/A{% endif %}</td>

@@ -10,7 +10,7 @@ permalink: /upcoming/
   {% for talk in upcoming %}
 
   <li>{{ talk.date | date: '%B %d, %Y' }} - {{ talk.title }}
-  (<a href="{{ talk.url }}">view abstract</a>)
+  (<a href="{{ talk.url | relative_url }}">view abstract</a>)
 
   {% if talk.room %}(Room: {{ talk.room }}){% endif %}
   {% if talk.rsvp %}<a href="{{ talk.rsvp }}">RSVP</a>{% endif %}</li>

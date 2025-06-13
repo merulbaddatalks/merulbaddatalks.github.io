@@ -27,7 +27,8 @@ header {
 header .logo img {
   display: block;
   margin: 0 auto;
-  height: 60px;
+  height: 150px;
+
 }
 header nav {
   margin-top: 0.5rem;
@@ -55,6 +56,9 @@ footer {
   text-align: center;
   padding: 0.5rem 1rem;
 }
+footer a {
+  color: #fff;
+}
 a {
   color: var(--primary);
 }
@@ -70,15 +74,21 @@ a:hover {
   display: flex;
 
   flex-direction: row;
-
   align-items: center;
   gap: 1rem;
 }
+.talk-header .talk-meta {
+  text-align: left;
+}
+.talk-header h1,
+.talk-header p {
+  margin: 0;
+}
+
 .talk .speaker-photo {
   width: 150px;
   height: 150px;
   object-fit: cover;
-
   border: 3px solid var(--primary);
 
 }
