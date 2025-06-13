@@ -38,8 +38,9 @@ header nav a {
   text-decoration: none;
   font-weight: 600;
 }
-header nav a:hover {
+  header nav a:hover {
   text-decoration: underline;
+  color: #457b9d;
 }
 main {
   max-width: 960px;
@@ -55,6 +56,9 @@ footer {
 }
 footer a {
   color: #fff;
+}
+footer a:hover {
+  color: #457b9d;
 }
 a:active,
 footer a:active,
@@ -129,6 +133,22 @@ a:hover {
   color: #000;
   font-weight: bold;
 }
+
+.upcoming-talk {
+  background: var(--accent-light);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.upcoming-talk h2 {
+  margin-top: 0;
+}
+.upcoming-talk .next-talk {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -153,5 +173,11 @@ a:hover {
   .talk .speaker-photo {
     width: 100%;
     max-width: 200px;
+  }
+  .talk-table,
+  .calendar-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }
