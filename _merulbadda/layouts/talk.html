@@ -25,8 +25,15 @@ layout: default
     {{ page.abstract | markdownify }}
   </section>
   {% if page.youtube_url %}
+  {% assign embed_url = page.youtube_url %}
+  {% if page.youtube_url contains 'youtu.be/' %}
+    {% assign yt_id = page.youtube_url | split: '/' | last %}
+    {% assign embed_url = 'https://www.youtube.com/embed/' | append: yt_id %}
+  {% else %}
+    {% assign embed_url = page.youtube_url | replace: 'watch?v=', 'embed/' %}
+  {% endif %}
   <div class="video">
-    <iframe width="560" height="315" src="{{ page.youtube_url | replace: 'watch?v=', 'embed/' }}" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="{{ embed_url }}" frameborder="0" allowfullscreen></iframe>
   </div>
   {% endif %}
   {% if page.slides_url %}
