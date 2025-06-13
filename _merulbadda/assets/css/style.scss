@@ -21,10 +21,11 @@ body {
 
 header {
   background: $primary;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 
 header .logo img {
@@ -88,8 +89,8 @@ a:hover {
 .talk-header {
   display: flex;
   flex-direction: row;
-
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -103,12 +104,21 @@ a:hover {
   margin: 0;
 }
 
+.talk-header h1 {
+  margin-bottom: 0.25rem;
+}
+
+.talk-header .speaker {
+  margin-bottom: 0.25rem;
+}
+
 
 .talk .speaker-photo {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border: 3px solid $primary;
+  margin-left: auto;
 
 }
 
