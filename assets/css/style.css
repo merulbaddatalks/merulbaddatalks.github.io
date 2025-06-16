@@ -292,7 +292,7 @@ a:hover {
   font-size: 1.1rem;
 }
 
-/* Card layout for previous talks on mobile */
+/* Card layout for previous talks */
 .previous-talks-cards {
   display: none;
 }
@@ -316,20 +316,21 @@ a:hover {
 }
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   header .logo img {
     height: 100px;
   }
   header .site-nav .nav-list {
     flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
+    width: auto;
+    align-items: flex-end;
   }
   header .site-nav a {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+    font-size: 0.85rem;
   }
   .talk-header {
     flex-direction: column;
@@ -462,8 +463,7 @@ a:hover {
 
   /* 5. Adjust call-to-action links and footers */
   .talk-cta,
-  .view-all a,
-  .mobile-menu-toggle {
+  .view-all a {
     font-size: 1rem !important;
     padding: 0.75rem 1rem !important;
     display: inline-block !important;
@@ -479,7 +479,7 @@ a:hover {
   }
 
   .mobile-menu-toggle {
-    display: block !important;
+    display: none !important;
   }
   .desktop-only {
     display: none !important;
