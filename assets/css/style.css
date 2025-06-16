@@ -406,8 +406,8 @@ a:hover {
     margin-right: 0.5rem;
   }
 }
-// ### START MOBILE OVERRIDES ###
-// Place this block at the end of your existing stylesheet:
+/* ### START MOBILE OVERRIDES ### */
+/* Place this block at the end of your existing stylesheet: */
 
 @media screen and (max-width: 640px) {
 
@@ -489,4 +489,4 @@ a:hover {
   }
 }
 
-// ### END MOBILE OVERRIDES ###
+/* ### END MOBILE OVERRIDES ### */
