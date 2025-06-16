@@ -14,7 +14,13 @@ title: "Home"
 
     {{ next.speaker }}, {{ next.affiliation }}<br>
     <a href="{{ next.url | relative_url }}">view abstract</a></p>
-    {% if next.room %}<p>Room: {{ next.room }} | <a href="{{ next.rsvp }}">RSVP</a></p>{% endif %}
+    {% if next.time or next.room or next.rsvp %}
+    <p>
+      {% if next.time %}Time: {{ next.time }}{% endif %}
+      {% if next.room %}{% if next.time %} | {% endif %}Room: {{ next.room }}{% endif %}
+      {% if next.rsvp %} | <a href="{{ next.rsvp }}">RSVP</a>{% endif %}
+    </p>
+    {% endif %}
     <div id="upcoming-calendar" data-date="{{ next.date }}"></div>
   {% else %}
     <p>No upcoming talks scheduled.</p>
