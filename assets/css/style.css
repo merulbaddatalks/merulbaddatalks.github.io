@@ -9,6 +9,10 @@
 
   --primary-dark: #003961;
 }
+
+.page-title {
+  text-align: center;
+}
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
@@ -159,8 +163,17 @@ a:hover {
 .upcoming-talk a {
   color: #f1faee;
 }
+.upcoming-talk a:hover {
+  text-decoration: underline;
+  color: #F0B7A4;
+}
+.upcoming-talk:hover,
+.upcoming-talk:focus-within {
+  box-shadow: 0 0 0 3px #F0B7A4;
+}
 .upcoming-talk h2 {
   margin-top: 0;
+  text-align: center;
 }
 .upcoming-list {
   list-style: none;
@@ -190,7 +203,7 @@ a:hover {
   font-size: 0.9rem;
 }
 .upcoming-details .meta {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 @media (max-width: 600px) {
   header {

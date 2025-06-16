@@ -7,6 +7,10 @@ $bg: #A8DADC; // body background
 $text: #457B9D; // Text color on light background
 $highlight: #F1FAEE;
 
+.page-title {
+  text-align: center;
+}
+
 
 body {
   font-family: 'Roboto Mono', monospace;
@@ -196,10 +200,17 @@ a:hover {
 
 .upcoming-talk a:hover {
   text-decoration: underline;
+  color: $accent;
+}
+
+.upcoming-talk:hover,
+.upcoming-talk:focus-within {
+  box-shadow: 0 0 0 3px $accent;
 }
 
 .upcoming-talk h2 {
   margin-top: 0;
+  text-align: center;
 }
 
 .upcoming-talk .next-talk {
@@ -234,6 +245,10 @@ a:hover {
 .upcoming-details .title {
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.upcoming-details .meta {
+  font-size: 1.1rem;
 }
 
 @media (max-width: 600px) {
