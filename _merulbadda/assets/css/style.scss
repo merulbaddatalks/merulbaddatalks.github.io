@@ -11,6 +11,10 @@ $highlight: #F1FAEE;
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -30,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
