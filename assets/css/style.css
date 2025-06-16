@@ -176,6 +176,15 @@ a:hover {
   font-weight: bold;
   margin-right: 1rem;
   white-space: nowrap;
+  min-width: 7rem;
+}
+.upcoming-details {
+  text-align: left;
+  flex: 1;
+}
+.upcoming-details .title {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 .upcoming-details .affiliation {
   font-size: 0.9rem;

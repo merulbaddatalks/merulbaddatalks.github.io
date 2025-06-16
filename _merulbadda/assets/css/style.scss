@@ -185,7 +185,7 @@ a:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   margin: 1rem auto 2rem;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
   border: 2px solid $primary;
 
 }
@@ -205,6 +205,35 @@ a:hover {
 .upcoming-talk .next-talk {
   font-size: 1.1rem;
   margin-bottom: 1rem;
+}
+
+.upcoming-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.upcoming-date {
+  font-weight: bold;
+  margin-right: 1rem;
+  white-space: nowrap;
+  min-width: 7rem;
+}
+
+.upcoming-details {
+  text-align: left;
+  flex: 1;
+}
+
+.upcoming-details .title {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
