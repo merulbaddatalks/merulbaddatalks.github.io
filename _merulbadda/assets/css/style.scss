@@ -330,22 +330,46 @@ a:hover {
   font-size: 1.1rem;
 }
 
+// Card layout for previous talks
+.previous-talks-cards {
+  display: none;
+}
+
+.previous-talks-cards .talk-card {
+  background: $text;
+  color: $highlight;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid $primary;
+}
+
+.previous-talks-cards .talk-card a {
+  color: $highlight;
+}
+
+.previous-talks-cards .talk-card a:hover {
+  text-decoration: underline;
+  color: $accent;
+}
+
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   header .logo img {
     height: 100px;
   }
   header .site-nav .nav-list {
     flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
+    width: auto;
+    align-items: flex-end;
   }
   header .site-nav a {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
+    font-size: 0.85rem;
   }
   .talk-header {
     flex-direction: column;
@@ -396,6 +420,13 @@ a:hover {
     padding-right: 1rem !important;
   }
 
+  .previous-talks-table {
+    display: none;
+  }
+  .previous-talks-cards {
+    display: block;
+  }
+
   /* 2. Collapse upcoming talk layout into a vertical card */
   .upcoming .talk-card {
     display: block !important;
@@ -437,9 +468,7 @@ a:hover {
   .talk-cta,
   .view-all a,
   .mobile-menu-toggle {
-    font-size: 1rem !important;
-    padding: 0.75rem 1rem !important;
-    display: inline-block !important;
+    display: none !important;
   }
 
   /* 6. Prevent horizontal overflow */
@@ -451,9 +480,6 @@ a:hover {
     height: auto !important;
   }
 
-  .mobile-menu-toggle {
-    display: block !important;
-  }
   .desktop-only {
     display: none !important;
   }
