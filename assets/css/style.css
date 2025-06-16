@@ -152,7 +152,7 @@ a:hover {
 
   margin: 1rem auto 2rem;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
   border: 2px solid var(--primary);
 
 }
@@ -162,9 +162,26 @@ a:hover {
 .upcoming-talk h2 {
   margin-top: 0;
 }
-.upcoming-talk .next-talk {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+.upcoming-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.upcoming-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+.upcoming-date {
+  font-weight: bold;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+.upcoming-details .affiliation {
+  font-size: 0.9rem;
+}
+.upcoming-details .meta {
+  font-size: 0.9rem;
 }
 @media (max-width: 600px) {
   header {
@@ -215,9 +232,5 @@ a:hover {
   .upcoming-talk {
     max-width: 100%;
     padding: 0.75rem;
-  }
-
-  .upcoming-talk .next-talk {
-    font-size: 1rem;
   }
 }

@@ -4,24 +4,26 @@ title: "Home"
 ---
 
 {% assign upcoming = site.talks | where_exp: 't','t.date >= site.time' | sort: 'date' %}
-{% assign next = upcoming[0] %}
 <section class="upcoming-talk">
-  <h2>Upcoming Talk</h2>
-  {% if next %}
-    <p class="next-talk"><strong>{{ next.date | date: '%B %d, %Y' }}:</strong>
-
-    {{ next.title }}<br>
-
-    {{ next.speaker }}, {{ next.affiliation }}<br>
-    <a href="{{ next.url | relative_url }}">view abstract</a></p>
-    {% if next.time or next.room or next.rsvp %}
-    <p>
-      {% if next.time %}Time: {{ next.time }}{% endif %}
-      {% if next.room %}{% if next.time %} | {% endif %}Room: {{ next.room }}{% endif %}
-      {% if next.rsvp %} | <a href="{{ next.rsvp }}">RSVP</a>{% endif %}
-    </p>
-    {% endif %}
-    <div id="upcoming-calendar" data-date="{{ next.date }}"></div>
+  <h2>Upcoming Talks</h2>
+  {% if upcoming != empty %}
+  <ul class="upcoming-list">
+    {% for talk in upcoming %}
+    <li class="upcoming-item">
+      <span class="upcoming-date">{{ talk.date | date: '%B %d, %Y' }}.</span>
+      <div class="upcoming-details">
+        <span class="title"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></span><br>
+        <span class="speaker">{{ talk.speaker }}</span><br>
+        <span class="affiliation">{{ talk.affiliation }}</span><br>
+        <span class="meta">
+          {% if talk.time %}{{ talk.time }}{% endif %}
+          {% if talk.room %}{% if talk.time %} | {% endif %}Room: {{ talk.room }}{% endif %}
+          {% if talk.rsvp %} | <a href="{{ talk.rsvp }}">RSVP</a>{% endif %}
+        </span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
   {% else %}
     <p>No upcoming talks scheduled.</p>
   {% endif %}
