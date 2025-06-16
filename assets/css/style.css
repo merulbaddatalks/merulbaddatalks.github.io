@@ -10,6 +10,15 @@
   --primary-dark: #003961;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page-title {
   text-align: center;
 }
