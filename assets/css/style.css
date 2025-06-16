@@ -264,4 +264,44 @@ a:hover {
     max-width: 100%;
     padding: 0.75rem;
   }
+
+  /* Stack upcoming talk details vertically */
+  .upcoming-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .upcoming-date {
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+    min-width: auto;
+  }
+
+  /* Convert previous talks table to card layout */
+  .talk-table {
+    display: block;
+    border: none;
+  }
+  .talk-table thead {
+    display: none;
+  }
+  .talk-table tr {
+    display: block;
+    border: 1px solid #444;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  .talk-table td {
+    display: block;
+    border: none;
+    text-align: left;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+  }
+  .talk-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 45%;
+    margin-right: 0.5rem;
+  }
 }
