@@ -47,6 +47,15 @@ header {
 header .logo img {
   height: 150px;
 }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
 header nav {
   display: flex;
   gap: 1rem;
@@ -310,3 +319,82 @@ a:hover {
     margin-right: 0.5rem;
   }
 }
+// ### START MOBILE OVERRIDES ###
+// Place this block at the end of your existing stylesheet:
+
+@media screen and (max-width: 640px) {
+
+  /* 1. Ensure the main container pads the viewport edges */
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* 2. Collapse upcoming talk layout into a vertical card */
+  .upcoming .talk-card {
+    display: block !important;
+  }
+  .upcoming .talk-card img,
+  .upcoming .talk-card .media,
+  .upcoming .talk-card .content {
+    width: 100% !important;
+    margin: 0 !important;
+    float: none !important;
+  }
+
+  /* 3. Stack the past-talks grid into one column */
+  .past-list {
+    display: block !important;
+  }
+  .past-list .talk-card {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* 4. Tweak typography for small screens */
+  h2 {
+    font-size: 1.2rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .talk-title {
+    font-size: 1rem !important;
+    line-height: 1.3 !important;
+  }
+  .talk-date,
+  .talk-speaker,
+  .talk-affiliation {
+    font-size: 0.85rem !important;
+  }
+
+  /* 5. Adjust call-to-action links and footers */
+  .talk-cta,
+  .view-all a {
+    font-size: 0.9rem !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  /* 6. Prevent horizontal overflow */
+  body, html {
+    overflow-x: hidden !important;
+  }
+  img, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .nav-toggle {
+    display: block !important;
+  }
+  header nav {
+    display: none !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: flex-start !important;
+  }
+  header nav.open {
+    display: flex !important;
+  }
+}
+
+// ### END MOBILE OVERRIDES ###
