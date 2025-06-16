@@ -31,7 +31,7 @@ title: "Home"
 
 <section class="previous-talks">
   <h2>Previous Talks</h2>
-  <table class="talk-table">
+  <table class="talk-table previous-talks-table">
     <thead>
       <tr><th>Date</th><th>Title</th><th>Speaker</th><th>Affiliation</th><th>Recording</th><th>Slides</th></tr>
     </thead>
@@ -49,5 +49,22 @@ title: "Home"
       {% endfor %}
     </tbody>
   </table>
+
+  <div class="previous-talks-cards">
+    {% assign past = site.talks | where_exp: 't','t.date < site.time' | sort:'date' | reverse %}
+    {% for talk in past limit:5 %}
+    <div class="talk-card">
+      <div class="talk-title"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></div>
+      <div class="talk-meta">
+        <span class="talk-date">{{ talk.date | date: '%Y-%m-%d' }}</span><br>
+        <span class="talk-speaker">{{ talk.speaker }}</span>{% if talk.affiliation %}<br><span class="talk-affiliation">{{ talk.affiliation }}</span>{% endif %}
+      </div>
+      <div class="talk-links">
+        {% if talk.youtube_url %}<a href="{{ talk.youtube_url }}">Video</a>{% else %}N/A{% endif %}
+        {% if talk.slides_url %}{% if talk.youtube_url %} | {% endif %}<a href="{{ talk.slides_url }}">Slides</a>{% else %} | N/A{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
   <p><a href="{{ '/previous-talks/' | relative_url }}">More previous talks</a></p>
 </section>

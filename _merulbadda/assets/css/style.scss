@@ -40,6 +40,8 @@ body {
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 header {
@@ -55,7 +57,7 @@ header .logo img {
   height: 150px;
 }
 
-.nav-toggle {
+.mobile-menu-toggle {
   display: none;
   background: none;
   border: none;
@@ -67,24 +69,68 @@ header .logo img {
   height: 44px;
 }
 
-header nav {
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 1rem;
 }
 
-header nav a {
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #0B3D91;
+  flex-direction: column;
+}
+
+.mobile-menu li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-menu li:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+header .site-nav .nav-list {
+  display: flex;
+  gap: 1rem;
+}
+
+header .site-nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem;
 }
 
-header nav a:active,
+header .site-nav a:active,
 footer a:active {
   color: #A8DADC;
 }
 
-header nav a:hover {
+header .site-nav a:hover {
   text-decoration: underline;
   color: $text;
 }
@@ -220,8 +266,9 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   margin: 1rem auto 2rem;
-  max-width: 600px;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   text-align: left;
   border: 2px solid $primary;
 }
@@ -292,12 +339,12 @@ a:hover {
   header .logo img {
     height: 100px;
   }
-  header nav {
+  header .site-nav .nav-list {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
   }
-  header nav a {
+  header .site-nav a {
     padding: 0.5rem 0;
   }
   .talk-header {
@@ -388,31 +435,30 @@ a:hover {
 
   /* 5. Adjust call-to-action links and footers */
   .talk-cta,
-  .view-all a {
-    font-size: 0.9rem !important;
-    padding: 0.5rem 0 !important;
+  .view-all a,
+  .mobile-menu-toggle {
+    font-size: 1rem !important;
+    padding: 0.75rem 1rem !important;
+    display: inline-block !important;
   }
 
   /* 6. Prevent horizontal overflow */
   body, html {
     overflow-x: hidden !important;
   }
-  img, iframe {
+  img, iframe, table {
     max-width: 100% !important;
     height: auto !important;
   }
 
-  .nav-toggle {
+  .mobile-menu-toggle {
     display: block !important;
   }
-  header nav {
+  .desktop-only {
     display: none !important;
-    flex-direction: column !important;
-    width: 100% !important;
-    align-items: flex-start !important;
   }
-  header nav.open {
-    display: flex !important;
+  .mobile-only {
+    display: block !important;
   }
 }
 
