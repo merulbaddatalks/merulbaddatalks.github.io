@@ -24,13 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     cal.innerHTML = html;
   }
 
-  const toggle = document.querySelector('.nav-toggle');
-  const nav = document.getElementById('main-nav');
-  if (toggle && nav) {
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const menu = document.querySelector('.mobile-menu');
+  if (toggle && menu) {
     toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', !expanded);
-      nav.classList.toggle('open');
+      menu.classList.toggle('open');
     });
   }
 });
