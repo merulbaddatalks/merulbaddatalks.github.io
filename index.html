@@ -39,12 +39,12 @@ title: "Home"
       {% assign past = site.talks | where_exp: 't','t.date < site.time' | sort:'date' | reverse %}
       {% for talk in past limit:5 %}
       <tr>
-        <td>{{ talk.date | date: '%Y-%m-%d' }}</td>
-        <td><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></td>
-        <td>{{ talk.speaker }}</td>
-        <td>{{ talk.affiliation }}</td>
-        <td>{% if talk.youtube_url %}<a href="{{ talk.youtube_url }}">Video</a>{% else %}N/A{% endif %}</td>
-        <td>{% if talk.slides_url %}<a href="{{ talk.slides_url }}">Slides</a>{% else %}N/A{% endif %}</td>
+        <td data-label="Date">{{ talk.date | date: '%Y-%m-%d' }}</td>
+        <td data-label="Title"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></td>
+        <td data-label="Speaker">{{ talk.speaker }}</td>
+        <td data-label="Affiliation">{{ talk.affiliation }}</td>
+        <td data-label="Recording">{% if talk.youtube_url %}<a href="{{ talk.youtube_url }}">Video</a>{% else %}N/A{% endif %}</td>
+        <td data-label="Slides">{% if talk.slides_url %}<a href="{{ talk.slides_url }}">Slides</a>{% else %}N/A{% endif %}</td>
       </tr>
       {% endfor %}
     </tbody>
