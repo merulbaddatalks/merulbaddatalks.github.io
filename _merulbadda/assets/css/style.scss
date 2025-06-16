@@ -7,6 +7,15 @@ $bg: #A8DADC; // body background
 $text: #457B9D; // Text color on light background
 $highlight: #F1FAEE;
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page-title {
   text-align: center;
 }
