@@ -373,11 +373,13 @@ a:hover {
   }
 
   .talk-header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
-  .talk-header p {
-    font-size: 0.9rem;
+  .talk-header .speaker,
+  .talk-header .affiliation,
+  .talk-header .date {
+    font-size: 0.8rem;
   }
 
   .talk-table th,
