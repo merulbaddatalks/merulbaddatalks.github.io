@@ -28,8 +28,9 @@ title: "Previous Talks"
   {% for talk in past %}
   <div class="talk-card">
     <div class="talk-date">{{ talk.date | date: '%B %d, %Y' }}</div>
-    <div class="talk-title">{{ talk.title }}</div>
-    <div class="talk-speaker">{{ talk.speaker }}{% if talk.affiliation %} ({{ talk.affiliation }}){% endif %}</div>
+    <div class="talk-title"><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></div>
+    <div class="talk-speaker">{{ talk.speaker }}</div>
+    {% if talk.affiliation %}<div class="talk-affiliation">{{ talk.affiliation }}</div>{% endif %}
     <div class="talk-links">
       {% if talk.youtube_url %}<a href="{{ talk.youtube_url }}">Video</a>{% endif %}
       {% if talk.slides_url %}{% if talk.youtube_url %} | {% endif %}<a href="{{ talk.slides_url }}">Slides</a>{% endif %}

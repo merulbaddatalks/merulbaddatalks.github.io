@@ -42,6 +42,7 @@ body {
   padding-right: 1rem;
   margin: 0 auto;
   max-width: 100%;
+  flex: 1;
 }
 header {
   background: var(--primary);
@@ -182,7 +183,8 @@ a:hover {
 }
 .talk-header h1 {
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .talk-header .speaker {
   margin-bottom: 0.5rem;
@@ -194,6 +196,7 @@ a:hover {
 }
 .talk-header .date {
   margin-top: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .talk {
@@ -205,6 +208,7 @@ a:hover {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  aspect-ratio: 1 / 1;
   border: 3px solid var(--primary);
 
 }
@@ -318,6 +322,12 @@ a:hover {
   margin-bottom: 1rem;
   border: 2px solid var(--primary);
 }
+.previous-talks-cards .talk-date,
+.previous-talks-cards .talk-title,
+.previous-talks-cards .talk-speaker,
+.previous-talks-cards .talk-affiliation {
+  margin-bottom: 0.25rem;
+}
 
 .previous-talks-cards .talk-card a {
   color: #f1faee;
@@ -334,7 +344,7 @@ a:hover {
     justify-content: space-between;
   }
   header .logo img {
-    height: 80px;
+    height: 75px;
   }
   header .site-nav .nav-list {
     flex-direction: column;
@@ -353,6 +363,7 @@ a:hover {
   .talk .speaker-photo {
     width: 100%;
     max-width: 200px;
+    aspect-ratio: 1 / 1;
   }
   .talk-table,
   .calendar-table {
@@ -362,7 +373,7 @@ a:hover {
   }
 
   .talk-header h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .talk-header p {
