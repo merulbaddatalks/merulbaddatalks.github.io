@@ -1,0 +1,20 @@
+---
+layout: null
+---
+[
+{% assign talks = site.talks | sort: 'date' %}
+{% for talk in talks %}
+  {
+    "title": {{ talk.title | jsonify }},
+    "date": "{{ talk.date }}",
+    "speaker": {{ talk.speaker | jsonify }},
+    "affiliation": {{ talk.affiliation | jsonify }},
+    "room": {{ talk.room | jsonify }},
+    "time": {{ talk.time | jsonify }},
+    "rsvp": {{ talk.rsvp | jsonify }},
+    "youtube_url": {{ talk.youtube_url | jsonify }},
+    "slides_url": {{ talk.slides_url | jsonify }},
+    "url": "{{ talk.url | relative_url }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
