@@ -5,7 +5,7 @@ permalink: /upcoming/
 ---
 
 <h2 class="page-title">Upcoming Talks</h2>
-<ul>
+<ul class="upcoming-list">
   {% assign upcoming = site.talks | where_exp: 'talk', 'talk.date > site.time' | sort: 'date' %}
   {% for talk in upcoming %}
 
