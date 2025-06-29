@@ -17,4 +17,6 @@ abstract: >
   \mathcal{F} = \exp\left( -\sum_{I=1}^N \frac{1}{\lambda_I} \operatorname{ad}(r_I) \right)
   \]
   deforms the coproduct of \( U(\mathfrak{g}) \) into a multiparameter quantum group \( U_\lambda(\mathfrak{g}) \), and one checks that \( C^\infty(\mathcal{O}_{\lambda_0})[[\lambda]] \) becomes a natural \( U_\lambda(\mathfrak{g}) \)-module algebra. Our construction thus marries three pillars—symplectic geometry, Hopf-algebra deformation, and exact matching to the group’s unirreps—into a single, coherent deformation-quantization picture.
+
+speaker_photo: "/assets/images/speakers/hasib.jpeg"
 ---
