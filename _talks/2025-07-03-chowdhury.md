@@ -6,7 +6,7 @@ speaker: "Syed Hasibul Hassan Chowdhury"
 affiliation: "Professor, Department of Mathematics and Natural Sciences, BRAC University"
 room: "10H-39C"
 rsvp: "https://forms.gle/rXLZoq9UZcBuzcUs5"
-abstract: >
+abstract: |
   We develop a unified geometric framework for formal deformation quantization of coadjoint orbits of a Lie group \( G \) with Lie algebra \( \mathfrak{g} \), in which the \emph{internal} deformation parameters themselves range over the unitary dual \( \widehat{G} \). For each coadjoint orbit \( \mathcal{O}_{\lambda_0} \subset \mathfrak{g}^* \), the dual vector space of the Lie algebra \( \mathfrak{g} \), one constructs a Fedosov-type flat connection on the analogue of the single-parameter Weyl algebra bundle
   \[
   D = \nabla - \delta + \sum_{I=1}^N \frac{1}{\lambda_I} \operatorname{ad}(r_I),
