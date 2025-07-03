@@ -27,4 +27,6 @@ abstract: |
   becomes a natural $ U_\lambda(\mathfrak{g}) $-module algebra. Our construction thus marries three pillars—symplectic geometry, Hopf-algebra deformation, and exact matching to the group’s unirreps—into a single, coherent deformation-quantization picture.
 
 speaker_photo: "/assets/images/speakers/hasib.jpeg"
+youtube_url: "https://youtu.be/a_7ouqUeA80"
+slides_url: "https://drive.google.com/file/d/1yf0Bwvp7nenxx80l8RquFp-fqmuk6tbF/view?usp=sharing"
 ---
