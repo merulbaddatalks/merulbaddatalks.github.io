@@ -57,7 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const dateStr = new Date(t.date).toLocaleDateString('en-US', { year:'numeric', month:'long', day:'2-digit' });
           let html = `${dateStr} - <a href="${t.url}">${t.title}</a>`;
           if (t.time) html += ` (Time: ${t.time})`;
-          if (t.room) html += ` (Room: ${t.room})`;
+          if (t.room) {
+            html += ' (Room: ';
+            html += t.room_url ? `<a href="${t.room_url}">${t.room}</a>` : t.room;
+            html += ')';
+          }
           if (t.rsvp) html += ` <a href="${t.rsvp}">RSVP</a>`;
           li.innerHTML = html;
           upcomingList.appendChild(li);

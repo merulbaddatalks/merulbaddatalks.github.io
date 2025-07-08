@@ -12,7 +12,9 @@ layout: default
       <p class="date">📅 {{ page.date | date: '%B %d, %Y' }}
         {% if page.date >= site.time %}
           {% if page.time %} | Time: {{ page.time }}{% endif %}
-          {% if page.room %} | Room: {{ page.room }}{% endif %}
+          {% if page.room %} | Room:
+            {% if page.room_url %}<a href="{{ page.room_url }}">{{ page.room }}</a>{% else %}{{ page.room }}{% endif %}
+          {% endif %}
           {% if page.rsvp %} | <a href="{{ page.rsvp }}">RSVP</a>{% endif %}
         {% endif %}
       </p>

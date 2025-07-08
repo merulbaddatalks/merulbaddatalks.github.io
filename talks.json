@@ -10,6 +10,7 @@ layout: null
     "speaker": {{ talk.speaker | jsonify }},
     "affiliation": {{ talk.affiliation | jsonify }},
     "room": {{ talk.room | jsonify }},
+    "room_url": {{ talk.room_url | jsonify }},
     "time": {{ talk.time | jsonify }},
     "rsvp": {{ talk.rsvp | jsonify }},
     "youtube_url": {{ talk.youtube_url | jsonify }},
