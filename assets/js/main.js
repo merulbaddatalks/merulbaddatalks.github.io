@@ -33,4 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.toggle('open');
     });
   }
+
+  document.querySelectorAll('a[href^="http"]').forEach(anchor => {
+    if (!anchor.href.startsWith(window.location.origin)) {
+      anchor.setAttribute('target', '_blank');
+      anchor.setAttribute('rel', 'noopener');
+    }
+  });
 });
