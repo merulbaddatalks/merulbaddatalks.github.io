@@ -1,5 +1,5 @@
 ---
-title: "Finite-Dimensional Irreducible Representations of the Weyl Algebra in Characteristic p>0"
+title: "Finite-Dimensional Irreducible Representations of the Weyl Algebra in Characteristic $$p>0$$"
 date: 2025-08-07
 time: "5pm"
 speaker: "Atonu Roy Chowdhury"
