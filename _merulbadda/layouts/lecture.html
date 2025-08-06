@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="lecture">
+  <div class="lecture-header">
+    <div class="lecture-meta">
+      <h1>{{ page.title | markdownify }}</h1>
+      <p class="speaker">{{ page.speaker }}</p>
+      <p class="affiliation">{{ page.affiliation }}</p>
+      <p class="date">📅 {{ page.date | date: '%B %d, %Y' }}{% if page.mode %} | Mode: {{ page.mode }}{% endif %}{% if page.rsvp %} | <a href="{{ page.rsvp }}">RSVP</a>{% endif %}</p>
+    </div>
+    {% if page.speaker_photo %}
+    <img src="{{ page.speaker_photo | relative_url }}" alt="{{ page.speaker }}" class="speaker-photo" />
+    {% endif %}
+  </div>
+  <section class="abstract">
+    <h2>Abstract</h2>
+    {{ page.abstract | markdownify }}
+  </section>
+  {% if page.recording_url %}
+  {% assign embed_url = page.recording_url %}
+  {% if page.recording_url contains 'youtu.be/' %}
+    {% assign yt_id = page.recording_url | split: '/' | last %}
+    {% assign embed_url = 'https://www.youtube.com/embed/' | append: yt_id %}
+  {% elsif page.recording_url contains 'youtube.com/watch' %}
+    {% assign embed_url = page.recording_url | replace: 'watch?v=', 'embed/' %}
+  {% endif %}
+  <div class="video">
+    <iframe width="560" height="315" src="{{ embed_url }}" frameborder="0" allowfullscreen></iframe>
+  </div>
+  {% endif %}
+  {% if page.notes_url %}
+  <p class="notes"><a href="{{ page.notes_url }}">Lecture Notes</a></p>
+  {% endif %}
+</article>

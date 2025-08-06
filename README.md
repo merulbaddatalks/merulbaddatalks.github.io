@@ -12,6 +12,7 @@ _merulbadda/         Jekyll layouts, includes, and assets
   assets/
 _posts/              Optional blog posts
 _talks/              Markdown files for each talk
+_lectures/           Markdown files for each lecture series entry
 about.md
 upcoming.md
 index.html
@@ -41,6 +42,29 @@ slides_url: "https://drive.google.com/file/d/ID/view"
 
 3. Provide a Google Drive link in `slides_url` for any slides.
 4. Commit the file and images to the repository.
+
+## Adding a New Lecture Series Entry
+
+1. Create a markdown file in the `_lectures/` directory named `YYYY-MM-DD-slug.md`.
+2. Use the following front matter template:
+
+```yaml
+---
+title: "Lecture title"
+date: YYYY-MM-DD
+speaker: "Speaker name"
+affiliation: "Affiliation"
+mode: "online" # or "offline"
+rsvp: "https://example.com/rsvp"
+abstract: >
+  Full abstract text
+notes_url: "https://example.com/notes.pdf"
+recording_url: "https://www.youtube.com/watch?v=VIDEOID"
+---
+```
+
+3. Optional fields such as `speaker_photo` can be included to display an image on the lecture page.
+4. Commit the file and any related assets to the repository.
 
 ## Building Locally
 

@@ -29,6 +29,31 @@ title: "Home"
   {% endif %}
 </section>
 
+{% assign upcoming_lectures = site.lectures | where_exp: 'l','l.date >= site.time' | sort: 'date' %}
+<section class="upcoming-lecture">
+  <h2>Upcoming Lecture Series</h2>
+  {% if upcoming_lectures != empty %}
+  <ul class="upcoming-list">
+    {% for lecture in upcoming_lectures %}
+    <li class="upcoming-item">
+      <span class="upcoming-date">{{ lecture.date | date: '%B %d, %Y' }}.</span>
+      <div class="upcoming-details">
+        <span class="title"><a href="{{ lecture.url | relative_url }}">{{ lecture.title }}</a></span><br>
+        <span class="speaker">{{ lecture.speaker }}</span><br>
+        <span class="affiliation">{{ lecture.affiliation }}</span><br>
+        <span class="meta">
+          {% if lecture.mode %}Mode: {{ lecture.mode }}{% endif %}
+          {% if lecture.rsvp %}{% if lecture.mode %} | {% endif %}<a href="{{ lecture.rsvp }}">RSVP</a>{% endif %}
+        </span>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+    <p>No upcoming lecture series scheduled.</p>
+  {% endif %}
+</section>
+
 <section class="previous-talks">
   <h2>Previous Talks</h2>
   <table class="talk-table previous-talks-table">
