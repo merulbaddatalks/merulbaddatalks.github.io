@@ -13,6 +13,9 @@ collections:
   talks:
     output: true
     permalink: /talks/:path/
+  lectures:
+    output: true
+    permalink: /lectures/:path/
 
 layouts_dir: _merulbadda/layouts
 includes_dir: _merulbadda/includes
@@ -31,6 +34,11 @@ defaults:
       type: talks
     values:
       layout: talk
+  - scope:
+      path: ""
+      type: lectures
+    values:
+      layout: lecture
 
 permalink: pretty
 future: true
