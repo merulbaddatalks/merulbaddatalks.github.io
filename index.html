@@ -6,7 +6,7 @@ title: "Home"
 {% assign upcoming = site.talks | where_exp: 't','t.date >= site.time' | sort: 'date' %}
 {% assign upcoming_lectures = site.lectures | where_exp: 'l','l.date >= site.time' | sort: 'date' %}
 <section class="upcoming-talk">
-  <h2>Upcoming Talks</h2>
+  <h2>Upcoming Events</h2>
   {% if upcoming != empty %}
   <ul class="upcoming-list">
     {% for talk in upcoming %}
@@ -30,7 +30,6 @@ title: "Home"
   {% endif %}
 
   {% if upcoming_lectures != empty %}
-  <h3>Upcoming Lecture Series</h3>
   <ul class="upcoming-list">
     {% for lecture in upcoming_lectures %}
     <li class="upcoming-item">
