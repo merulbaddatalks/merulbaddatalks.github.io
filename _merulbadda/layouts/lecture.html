@@ -17,6 +17,9 @@ layout: default
     <h2>Abstract</h2>
     {{ page.abstract | markdownify }}
   </section>
+  <section class="lecture-content">
+    {{ content }}
+  </section>
   {% if page.sessions %}
   <section class="lecture-sessions">
     <h2>Lecture Sessions</h2>
