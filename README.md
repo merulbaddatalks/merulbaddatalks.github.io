@@ -60,6 +60,15 @@ abstract: >
   Full abstract text
 notes_url: "https://example.com/notes.pdf"
 recording_url: "https://www.youtube.com/watch?v=VIDEOID"
+sessions:
+  - number: 1
+    title: "Introduction to Samples"
+    recording: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    notes: "https://example.com/notes-1.pdf"
+  - number: 2
+    title: "Advanced Sample Techniques"
+    recording: ""
+    notes: ""
 ---
 ```
 
