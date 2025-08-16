@@ -1,6 +1,6 @@
 ---
 title: "Lectures on Complex Differential Geometry"
-date: 2025-08-11
+date: 2025-08-16
 speaker: "Saif Ar Rasul"
 affiliation: "Brac University"
 mode: "online"
@@ -28,7 +28,7 @@ As we get further along the list I will explain more and more these concepts as 
 The main reading material for this course is *Lectures on Differential Geometry* by Chern, Chen and Lam. For topology review one may consult *Topology* by James Munkres. Further reading material will be recommended as the course progresses.
 
 ## Class Forum
-I would like to invite everyone who is considering joining to the [Discord server](https://discord.gg/m94KrSwp) for the course. Here you will get announcements, updates, and a forum for discussion of the topics in the course.
+I would like to invite everyone who is considering joining to the [Discord server](https://discord.gg/UHs24e48) for the course. Here you will get announcements, updates, and a forum for discussion of the topics in the course.
 
 ## Class Timing
-For maximal accessibility, the classes will be held online in the evenings, some time after 8 PM. We will be meeting once or twice a week depending on how involved each class turns out to be. However, the exact timings are still in flux as I would like input from people taking the course on what timings are most suitable. We will discuss this on Discord before the classes start.
+Sunday, 9:00 pm
