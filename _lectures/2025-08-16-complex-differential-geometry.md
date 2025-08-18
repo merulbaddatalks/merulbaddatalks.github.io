@@ -7,6 +7,12 @@ mode: "online"
 rsvp: "https://docs.google.com/forms/d/e/1FAIpQLScrzFwJc5hPa_7_d2qn1HwLyuZw87hvfrlx5gC_kvgYK-s8sw/viewform"
 abstract: >
   This is an introductory course on complex differential geometry, closely following "Lectures on Differential Geometry" by S. S. Chern, W. H. Chen and K. H. Lam. The course aims to acquaint students with some of the major concepts in complex differential geometry, which can serve as a basis for further study.
+
+sessions:
+  - number: 1
+    title: "A Brief Look at Real Differential Geometry"
+    recording: "https://youtu.be/76nFetVOfes"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
 ---
 
 ## Course Synopsis
