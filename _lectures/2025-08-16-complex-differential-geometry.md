@@ -16,7 +16,7 @@ sessions:
   - number: 2
     title: "A Brief Look at Real Differential Geometry (Part 2)
     recording: "https://youtu.be/4oss2sMHFY4?si=faJge1tj8Dk-njbZ"
-    notes: 
+    notes: ""
 ---
 
 ## Course Synopsis
