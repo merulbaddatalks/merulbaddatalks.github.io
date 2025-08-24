@@ -16,7 +16,11 @@ sessions:
   - number: 2
     title: "A Brief Look at Real Differential Geometry (Part 2)"
     recording: "https://youtu.be/4oss2sMHFY4?si=faJge1tj8Dk-njbZ"
-    notes: ""
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 3
+    title: "Complex Manifolds and Complex Structures On Vector Spaces"
+    recording: "https://youtu.be/F012QM8X90o"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
 ---
 
 ## Course Synopsis
