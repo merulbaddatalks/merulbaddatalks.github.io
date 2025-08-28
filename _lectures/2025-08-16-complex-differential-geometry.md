@@ -21,6 +21,10 @@ sessions:
     title: "Complex Manifolds and Complex Structures On Vector Spaces"
     recording: "https://youtu.be/F012QM8X90o"
     notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 4
+    title: "Complex Structures on Vector Spaces"
+    recording: "https://youtu.be/J34LCP2C6Ok"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
 ---
 
 ## Course Synopsis
