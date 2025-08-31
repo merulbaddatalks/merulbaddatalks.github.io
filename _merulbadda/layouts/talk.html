@@ -15,7 +15,7 @@ layout: default
           {% if page.room %} | Room:
             {% if page.room_url %}<a href="{{ page.room_url }}">{{ page.room }}</a>{% else %}{{ page.room }}{% endif %}
           {% endif %}
-          {% if page.rsvp %} | <a href="{{ page.rsvp }}">RSVP</a>{% endif %}
+            {% if page.rsvp %} | <a class="rsvp-link" href="{{ page.rsvp }}">RSVP</a>{% endif %}
         {% endif %}
       </p>
     </div>
