@@ -8,6 +8,10 @@ permalink: /lecture-series/
 <ul class="lecture-series-list">
   {% assign lectures = site.lectures | sort: 'date' %}
   {% for lecture in lectures %}
-  <li>{{ lecture.date | date: '%B %d, %Y' }} - <a href="{{ lecture.url | relative_url }}">{{ lecture.title }}</a> ({{ lecture.speaker }})</li>
+  <li class="lecture-item">
+    <span class="lecture-date">{{ lecture.date | date: '%B %d, %Y' }}</span>
+    <a class="lecture-title" href="{{ lecture.url | relative_url }}">{{ lecture.title }}</a>
+    <span class="lecture-speaker">{{ lecture.speaker }}</span>
+  </li>
   {% endfor %}
 </ul>
