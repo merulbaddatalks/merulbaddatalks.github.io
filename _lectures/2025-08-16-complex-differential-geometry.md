@@ -25,6 +25,10 @@ sessions:
     title: "Complex Structures on Vector Spaces"
     recording: "https://youtu.be/J34LCP2C6Ok"
     notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 5
+    title: "Complex Structures on Vector Spaces (Part 2)"
+    recording: "https://youtu.be/_rfUiewrsDA"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
 ---
 
 ## Course Synopsis
