@@ -188,15 +188,23 @@ a:hover {
 }
 .talk-header .speaker {
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .talk-header .affiliation {
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .talk-header .date {
   margin-top: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+}
+.talk-header .date .rsvp-link {
+  background: var(--primary);
+  color: var(--accent-light);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .talk {
