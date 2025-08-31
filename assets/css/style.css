@@ -317,12 +317,14 @@ a:hover {
   font-size: 1.1rem;
 }
 
-/* Card layout for previous talks */
-.previous-talks-cards {
+/* Card layout for previous talks and lecture series */
+.previous-talks-cards,
+.lecture-series-cards {
   display: none;
 }
 
-.previous-talks-cards .talk-card {
+.previous-talks-cards .talk-card,
+.lecture-series-cards .talk-card {
   background: #457b9d;
   color: #f1faee;
   padding: 0.75rem;
@@ -333,15 +335,21 @@ a:hover {
 .previous-talks-cards .talk-date,
 .previous-talks-cards .talk-title,
 .previous-talks-cards .talk-speaker,
-.previous-talks-cards .talk-affiliation {
+.previous-talks-cards .talk-affiliation,
+.lecture-series-cards .talk-date,
+.lecture-series-cards .talk-title,
+.lecture-series-cards .talk-speaker,
+.lecture-series-cards .talk-affiliation {
   margin-bottom: 0.25rem;
 }
 
-.previous-talks-cards .talk-card a {
+.previous-talks-cards .talk-card a,
+.lecture-series-cards .talk-card a {
   color: #f1faee;
 }
 
-.previous-talks-cards .talk-card a:hover {
+.previous-talks-cards .talk-card a:hover,
+.lecture-series-cards .talk-card a:hover {
   text-decoration: underline;
   color: #F0B7A4;
 }
@@ -378,6 +386,14 @@ a:hover {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+  }
+
+  .lecture-table {
+    white-space: normal;
+  }
+  .lecture-table td {
+    white-space: normal;
+    word-break: break-word;
   }
 
   .talk-header h1 {
@@ -442,41 +458,6 @@ a:hover {
   }
 }
 
-/* Lecture series list */
-.lecture-series-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-.lecture-series-list .lecture-item {
-  background: var(--accent-light);
-  border-left: 4px solid var(--primary);
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.lecture-item .lecture-date {
-  font-weight: bold;
-}
-
-.lecture-item .lecture-title {
-  margin: 0.25rem 0;
-}
-
-.lecture-item .lecture-speaker {
-  font-size: 0.9rem;
-}
-
-@media screen and (min-width: 640px) {
-  .lecture-series-list {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
 /* ### START MOBILE OVERRIDES ### */
 /* Place this block at the end of your existing stylesheet: */
 
@@ -488,20 +469,24 @@ a:hover {
     padding-right: 1rem !important;
   }
 
-  .previous-talks-table {
+  .previous-talks-table,
+  .lecture-series-table {
     display: none;
   }
-  .previous-talks-cards {
+  .previous-talks-cards,
+  .lecture-series-cards {
     display: block;
   }
 
   /* Remove styling on previous talk cards in mobile view */
-  .previous-talks-cards .talk-card {
+  .previous-talks-cards .talk-card,
+  .lecture-series-cards .talk-card {
     background: none;
     border: none;
     color: inherit;
   }
-  .previous-talks-cards .talk-card a {
+  .previous-talks-cards .talk-card a,
+  .lecture-series-cards .talk-card a {
     color: var(--text);
   }
 
