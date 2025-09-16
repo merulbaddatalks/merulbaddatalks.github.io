@@ -37,6 +37,11 @@ sessions:
     title: "Complex Vector Bundles and Their Sections (Part 2)"
     recording: "https://youtu.be/jOTbrxNzS7Q"
     notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 8
+    title: "Complex Vector Bundles and Their Sections (Part 3)"
+    recording: "https://youtu.be/qTf87zMIBfo"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+
 ---
 
 ## Course Synopsis
