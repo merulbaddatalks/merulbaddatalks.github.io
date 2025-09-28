@@ -45,6 +45,10 @@ sessions:
     title: "Almost Complex Manifolds and Integrability"
     recording: "https://youtu.be/T2BJ4c844Ck?si=nyTEekUIG6J-k45C"
     notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 10
+    title: "Differential Forms"
+    recording: "https://youtu.be/CiJoMyux9aU"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
 
 ---
 
