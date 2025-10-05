@@ -46,8 +46,16 @@ sessions:
     recording: "https://youtu.be/T2BJ4c844Ck?si=nyTEekUIG6J-k45C"
     notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
   - number: 10
-    title: "Differential Forms"
+    title: "Exterior Differential Forms"
     recording: "https://youtu.be/CiJoMyux9aU"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 11
+    title: "Exterior Differential Forms (Part 2)"
+    recording: "https://youtu.be/alyq8sifai8"
+    notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
+  - number: 12
+    title: "Orientations and Integration"
+    recording: "https://youtu.be/q40EfF7m080"
     notes: "https://drive.google.com/drive/folders/1s5EBNiqA-8Lr2rY8rQrP9q9sSL5KQlG_?usp=sharing"
 
 ---
