@@ -1,0 +1,13 @@
+---
+title: " Measuring the Immeasurable - A Hunt for Neutrino Mass"
+date: 2025-11-13
+time: "9pm"
+speaker: "Ehteshamul Karim"
+affiliation: "University of Pittsburgh- on behalf of the Project 8 experiment"
+room: "Online (Zoom)"
+room_url: "https://bdren.zoom.us/j/99945666855?pwd=hyUqZ81PhZB1jM3vziIaeQzeBB91Xb.1"
+abstract: Neutrino oscillations prove that neutrinos have mass and effectively puts a lower bound to the neutrino mass scale, but the absolute mass scale still remains unknown. The most sensitive direct, model-independent measurement of the effective electron neutrino mass $m_\beta$ comes from observing the tritium beta-decay endpoint energy spectrum. Using this method, the KATRIN experiment currently sets the most stringent direct upper mass limit at 450 meV, and is designed to reach ~200 meV sensitivity. Project 8 experiment is aiming to go further & probe the entire inverted-ordering region using the novel technique of cyclotron radiation emission spectroscopy (CRES) - which infers each tritium beta-electron's kinetic energy from its cyclotron frequency. Following the successful demonstration of CRES with waveguides, the upcoming phase of Project 8 will demonstrate the first realization of the CRES technique in cylindrical cavities using Cavity CRES Apparatus (CCA) with the goal to further improve energy resolution by an order of magnitude. A cubic-meter scale volume apparatus called Low-Frequency Apparatus (LFA) is planned to boost statistics and address remaining technical risks on the path to reaching the final mass sensitivity goal of 40 meV.
+  Large Language Models (LLMs) like GPT-4 have demonstrated remarkable capabilities through pre-training on vast text corpora. However, their raw outputs often fall short of the nuanced expectations of human users. In this talk, I will explore the critical role of post-training techniques in aligning LLM behavior with human preferences. We begin with an overview of LLM pre-training through next-token prediction, then investigate why this objective alone is insufficient. Drawing on insights from reinforcement learning, we delve into post-training strategies including supervised fine-tuning and preference optimization methods like RLHF and Direct Preference Optimization (DPO). I will also present our recent findings—highlighting the surprising power of on-policy, suboptimal data in preference learning—and discuss the implications for future LLM alignment research. This talk is intended for audiences interested in LLMs, alignment and post-training.
+speaker_photo: "/assets/images/speakers/ehteshamul.jpg"
+youtube_url: ""
+slides_url: "https://drive.google.com/file/d/12jAxlQifwFqJKuT8vRUvkHvgY2wbsBWp/view?usp=sharing"
