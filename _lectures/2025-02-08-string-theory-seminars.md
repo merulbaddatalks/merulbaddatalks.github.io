@@ -12,7 +12,7 @@ sessions:
   - number: 1
     title: "History of String Theory"
     speaker: "Sirajush Salekin"
-    recording: ""
+    recording: "https://youtu.be/qdRT3J3Y6BQ"
     notes: ""
 ---
 
