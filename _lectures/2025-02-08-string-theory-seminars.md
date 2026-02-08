@@ -20,4 +20,4 @@ sessions:
 The primary reference for the series is *String Theory in a Nutshell* by Elias Kiritsis.
 
 ## How to Join
-If you would like to join the seminars, please email **walid.hasan@g.bracu.ac.bd**.
+If you would like to join the seminars, please email walid.hasan@g.bracu.ac.bd.
