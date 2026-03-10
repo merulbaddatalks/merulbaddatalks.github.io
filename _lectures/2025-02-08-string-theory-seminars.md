@@ -9,11 +9,11 @@ abstract: >
   mathematical tools for modern string theory, following *String Theory in a Nutshell* by Elias Kiritsis.
 
 sessions:
-  - number: 1
-    title: "History of String Theory"
-    speaker: "Sirajush Salekin"
-    recording: "https://youtu.be/qdRT3J3Y6BQ"
-    notes: ""
+ - number: 1
+   title: "History of String Theory"
+   speaker: "Sirajush Salekin"
+   recording: "https://youtu.be/qdRT3J3Y6BQ"
+   notes: ""
  - number: 2
    title: "Nambu Goto action and Polyakov action"
    speaker: "Ahmed Rakin Kamal"
