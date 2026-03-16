@@ -15,7 +15,7 @@ sessions:
    recording: "https://youtu.be/qdRT3J3Y6BQ"
    notes: ""
  - number: 2
-   title: "Nambu Goto and Polyakov action"
+   title: "Nambu Goto and Polyakov actions"
    speaker: "Ahmed Rakin Kamal"
    recording: "https://youtu.be/AHdlq_zkijE"
    notes: "https://drive.google.com/file/d/1grmxUb1DH2oqoWjCzQhYETM1iJBVgPlu/view?usp=drive_link"
