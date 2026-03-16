@@ -14,7 +14,7 @@ sessions:
    speaker: "Sirajush Salekin"
    recording: "https://youtu.be/qdRT3J3Y6BQ"
    notes: ""
-- number: 2
+ - number: 2
    title: "Nambu Goto and Polyakov action"
    speaker: "Ahmed Rakin Kamal"
    recording: "https://youtu.be/AHdlq_zkijE"
