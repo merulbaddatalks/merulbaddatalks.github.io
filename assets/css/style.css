@@ -354,36 +354,26 @@ a:hover {
   color: #F0B7A4;
 }
 
-.poster-section {
-  margin-top: 2rem;
-}
-
 .posters-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
+  gap: 1.25rem;
+  margin: 0;
 }
 
 .poster-card {
-  background: #457b9d;
-  color: #f1faee;
-  border: 2px solid var(--primary);
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .poster-card:hover,
 .poster-card:focus-within {
   transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  opacity: 0.92;
 }
 
 .poster-card a {
   display: block;
-  color: inherit;
   text-decoration: none;
 }
 
@@ -392,27 +382,16 @@ a:hover {
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
 }
 
-.poster-card-content {
-  padding: 0.9rem 1rem 1rem;
+.posters-grid-minimal {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.poster-card-title {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  line-height: 1.35;
-}
-
-.poster-card-speaker,
-.poster-card-date {
-  margin: 0.2rem 0;
-  font-size: 0.95rem;
-}
-
-.poster-card-date {
-  color: #f0f6fb;
+.poster-card-minimal {
+  background: transparent;
 }
 @media (max-width: 600px) {
   header {
