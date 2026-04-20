@@ -3,7 +3,7 @@ title: "Lectures on Complex Differential Geometry"
 date: 2025-08-16
 speaker: "Saif Ar Rasul"
 affiliation: "Brac University"
-poster_image: "/posters/saif ar rasul - complex dif goe.jpg"
+poster_image: "/posters/saif-ar-rasul-complex-differential-geometry.jpg"
 mode: "online"
 rsvp: "https://docs.google.com/forms/d/e/1FAIpQLScrzFwJc5hPa_7_d2qn1HwLyuZw87hvfrlx5gC_kvgYK-s8sw/viewform"
 abstract: >

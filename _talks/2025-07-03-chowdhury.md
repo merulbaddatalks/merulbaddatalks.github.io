@@ -4,7 +4,7 @@ date: 2025-07-03
 time: "5pm"
 speaker: "Syed Hasibul Hassan Chowdhury"
 affiliation: "Professor, Department of Mathematics and Natural Sciences, BRAC University"
-poster_image: "/posters/hasibul hassan chowdhury.jpg"
+poster_image: "/posters/hasibul-hassan-chowdhury.jpg"
 room: "10H-39C"
 rsvp: "https://forms.gle/rXLZoq9UZcBuzcUs5"
 abstract: |

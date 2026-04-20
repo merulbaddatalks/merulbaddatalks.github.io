@@ -8,6 +8,8 @@ permalink: /posters/
 {% assign lecture_posters = site.lectures | where_exp: 'lecture', 'lecture.poster_image' %}
 {% assign all_posters = talk_posters | concat: lecture_posters | sort: 'date' | reverse %}
 
+<h2 class="page-title">Posters</h2>
+
 <div class="posters-grid posters-grid-minimal">
   {% for item in all_posters %}
   <article class="poster-card poster-card-minimal">

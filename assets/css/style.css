@@ -380,9 +380,9 @@ a:hover {
 .poster-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  background: rgba(255, 255, 255, 0.12);
+  aspect-ratio: 210 / 297;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 6px;
 }
 

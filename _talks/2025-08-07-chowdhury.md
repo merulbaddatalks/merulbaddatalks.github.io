@@ -4,7 +4,7 @@ date: 2025-08-07
 time: "5pm"
 speaker: "Atonu Roy Chowdhury"
 affiliation: "Adjunct Lecturer, Department of Computer Science and Engineering, School of Data and Sciences, BRAC University"
-poster_image: "/posters/atonu roy - weyl algebra.jpg"
+poster_image: "/posters/atonu-roy-weyl-algebra.jpg"
 room: "9E-20T"
 rsvp: "https://forms.gle/PRibMsBvKNHD9W5f9"
 abstract: >
