@@ -4,6 +4,7 @@ date: 2025-12-28
 time: "05:00 pm"
 speaker: "Dr. Mir Mehedi Faruk"
 affiliation: "POSTDOC, Shanghai Tech U."
+poster_image: "/posters/faruk.jpg"
 room: "09G-29C, BRAC University"
 abstract:  
   I present recent advances in the study of de Sitter black holes, highlighting foundational results that I have played a central role in developing. These results are strong first steps towards understanding the (dual) quantum features of dS space.

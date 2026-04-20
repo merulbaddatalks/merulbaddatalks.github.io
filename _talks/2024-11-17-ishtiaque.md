@@ -3,6 +3,7 @@ title: "Introduction to Generalized Symmetry"
 date: 2024-11-17
 speaker: "Nafiz Ishtiaque"
 affiliation: "Postdoc, Institut des Hautes Études Scientifiques (IHES)"
+poster_image: "/posters/Nafiz Ishtiaque.jpg"
 room: "201"
 rsvp: "https://example.com/rsvp?date=2024-11-17"
 abstract: >

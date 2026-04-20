@@ -4,6 +4,7 @@ date: 2025-11-13
 time: "09:00 pm"
 speaker: "Ehteshamul Karim"
 affiliation: "University of Pittsburgh- on behalf of the Project 8 experiment"
+poster_image: "/posters/Karim.jpg"
 room: "Online (Zoom)"
 room_url: "https://bdren.zoom.us/j/99945666855?pwd=hyUqZ81PhZB1jM3vziIaeQzeBB91Xb.1"
 abstract: | 
