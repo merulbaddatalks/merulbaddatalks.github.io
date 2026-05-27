@@ -24,6 +24,11 @@ sessions:
    speaker: "Ahmed Rakin Kamal"
    recording: "https://youtu.be/DDNU4ittzpo"
    notes: "https://drive.google.com/file/d/1d5ASfmMegczqZHPkS17iOKCl87GxQIsv/view?usp=sharing"
+ - number: 4
+   title: "Review and setting up for quantization"
+   speaker: "Mishaal Hai"
+   recording: "https://youtu.be/QxRW4QU3mQ0"
+   notes: ""
    
 ---
 
