@@ -13,7 +13,7 @@ sessions:
    title: "History of String Theory"
    speaker: "Sirajush Salekin"
    recording: "https://youtu.be/qdRT3J3Y6BQ"
-   notes: ""
+   
  - number: 2
    title: "Nambu Goto and Polyakov actions"
    speaker: "Ahmed Rakin Kamal"
@@ -28,7 +28,7 @@ sessions:
    title: "Review and setting up for quantization"
    speaker: "Mishaal Hai"
    recording: "https://youtu.be/QxRW4QU3mQ0"
-   notes: ""
+
    
 ---
 
