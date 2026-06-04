@@ -11,6 +11,4 @@ abstract:
 
 
 speaker_photo: "/assets/images/speakers/Mir Mehedi Faruk.jpg"
-slides_url: ""
-youtube_url: ""
 ---
