@@ -7,6 +7,10 @@ title: "About"
 
 The Merul Badda Talks in Maths and Physics is a seminar series hosted by the School of Data and Sciences at BRAC University.
 
+## Contact
+
+Please contact us at <a href="mailto:merulbaddatalks@gmail.com">merulbaddatalks@gmail.com</a>.
+
 ## Media Coverage
 - ["Advancing mathematical sciences at SDS research seminar" - BRACU Express](https://bracuexpress.com/advancing-mathematical-sciences-at-sds-research-seminar/)
 - ["ব্র্যাক বিশ্ববিদ্যালয়ে ডার্ক ম্যাটার নিয়ে সেমিনার আয়োজিত" - বিজ্ঞানচিন্তা](https://www.bigganchinta.com/events/0q5xw2pe7z)

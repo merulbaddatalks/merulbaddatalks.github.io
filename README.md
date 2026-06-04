@@ -10,14 +10,17 @@ _merulbadda/         Jekyll layouts, includes, and assets
   layouts/
   includes/
   assets/
-_posts/              Optional blog posts
 _talks/              Markdown files for each talk
 _lectures/           Markdown files for each lecture series entry
+assets/              Shared images, scripts, and compiled CSS
+posters/             Poster images used by talks and lecture series
 about.md
-upcoming.md
 index.html
-contact.md
+lecture-series.md
+posters.md
 previous-talks.md
+upcoming.md
+talks.json
 _config.yml
 ```
 
@@ -30,18 +33,19 @@ _config.yml
 ---
 title: "Talk title"
 date: YYYY-MM-DD
+time: "5:00 PM"
 speaker: "Speaker name"
 affiliation: "Affiliation"
+poster_image: "/posters/slug.jpg"
+room: "Room name"
 abstract: >
   Full abstract text
 speaker_photo: "/assets/images/speakers/NAME.jpg"
-youtube_url: "https://www.youtube.com/watch?v=VIDEOID"
-slides_url: "https://drive.google.com/file/d/ID/view"
 ---
 ```
 
-3. Provide a Google Drive link in `slides_url` for any slides.
-4. Commit the file and images to the repository.
+3. Add `rsvp`, `youtube_url`, or `slides_url` only when a real URL is available.
+4. Commit the file and any related images to the repository.
 
 ## Adding a New Lecture Series Entry
 
@@ -59,20 +63,17 @@ rsvp: "https://example.com/rsvp"
 abstract: >
   Full abstract text
 notes_url: "https://example.com/notes.pdf"
-recording_url: "https://www.youtube.com/watch?v=VIDEOID"
 sessions:
   - number: 1
     title: "Introduction to Samples"
-    recording: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    recording: "https://example.com/recording"
     notes: "https://example.com/notes-1.pdf"
   - number: 2
     title: "Advanced Sample Techniques"
-    recording: ""
-    notes: ""
 ---
 ```
 
-3. Optional fields such as `speaker_photo` can be included to display an image on the lecture page.
+3. Add optional fields such as `speaker_photo`, `recording_url`, session `recording`, and session `notes` only when real URLs are available.
 4. Commit the file and any related assets to the repository.
 
 ## Building Locally

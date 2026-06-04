@@ -12,4 +12,5 @@ abstract:
 
 speaker_photo: "/assets/images/speakers/Ahmed Ittihad Hasib.jpeg"
 slides_url: "https://drive.google.com/file/d/1CxK3z6vuMuDMfDeJRcFTH7TsjMVfJlre/view?usp=sharing"
+youtube_url: "https://youtu.be/ZVuKRIi8Rm4"
 ---
