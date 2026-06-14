@@ -33,6 +33,7 @@ sessions:
    title: "Review and setting up for quantization (cont.)"
    speaker: "Mishaal Hai"
    recording: "https://youtu.be/_3-wID6-ZVQ"
+   notes: "https://drive.google.com/file/d/1KfD__oLAxXU2LOqnEguriduVQUOsCByt/view?usp=sharing"
    
 
 
